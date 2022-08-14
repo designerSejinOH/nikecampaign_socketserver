@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js Socket</title>
+  <style>
+    html,
+    body {
+      position: fixed;
+
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: 'Helvetica Neue LT Std 73 Bold Extended';
+      font-weight: normal;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    @font-face {
+      font-family: 'Helvetica Neue LT Std 73 Bold Extended';
+      font-style: normal;
+      font-weight: normal;
+      src: local('Helvetica Neue LT Std 73 Bold Extended'), url('HelveticaNeueLTStdBdEx 1.woff') format('woff');
+    }
+
+    h1 {
+      font-size: 3.5vw;
+      position: absolute;
+      top: 15px;
+      left: 2.7vw;
+    }
+
+    #logo {
+      position: absolute;
+      top: 40px;
+      right: 2.7vw;
+      width: 100px;
+    }
+
+    #qr {
+      position: absolute;
+      bottom: 20px;
+      left: 2.7vw;
+      width: 100px;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5vw;
+      position: absolute;
+      bottom: 20px;
+      right: 2.7vw;
+    }
+
+    a:hover {
+      color: greenyellow;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="sketch.js"></script>
+  <script>
+    $(document).bind(
+      'touchmove',
+      function (e) {
+        e.preventDefault();
+      }
+    );
+  </script>
+</head>
+
+<body>
+  <h1>WALKING IS TO SAVE EARTH</h1>
+  <!-- <a href="ser.html">server</a> -->
+  <a href="https://www.nike.com">with NIKE</a>
+  <img id="logo" src="nike.png" alt="">
+  <img id="qr" src="frame.png" alt="">
+</body>
+
+</html>
